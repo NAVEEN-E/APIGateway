@@ -103,8 +103,8 @@ class User(AbstractBaseUser, PermissionsMixin):
         blank=True,
         null=True,
     )
-    picture = models.CharField(
-        max_length=100,
+    picture = models.ImageField(
+        upload_to='',
         blank=True,
         null=True,
     )
